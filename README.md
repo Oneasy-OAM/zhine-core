@@ -1,181 +1,261 @@
 # Zhiné
 
 > **Open Source Project / 开源项目**  
-> **Personal Intelligence Companion / 个人智慧伙伴**  
-> **Beyond understanding. / 不止于懂你。**
+> **个人智慧伙伴 / Personal Intelligence Companion**  
+> **不止于懂你。 / Beyond understanding.**
 
-Zhiné 是一个建立在开放、可演进认知架构之上的个人智慧伙伴项目。
+Zhiné is an open-source project for building a **Personal Intelligence Companion** on top of an **open and evolvable cognitive architecture**.
 
-它的目标不是再做一个聊天机器人、任务执行框架或云端大模型套壳，而是帮助个人拥有一个本地、私有、可迁移、可治理、可持续成长的 **Personal Cognitive Model / 个人认知模型**，并将长期交互中产生的记忆、知识、经验、技能、反馈和评测沉淀为个人智慧资产。
+Zhiné aims to help every person own a local, private, portable, governable, and continuously evolving **Personal Cognitive Model** — a long-term personal intelligence system shaped by their memory, knowledge, experience, skills, feedback, and values.
 
----
-
-## 1. 项目定位
-
-| 层级 | 表达 | 说明 |
-|---|---|---|
-| 主品牌 | Zhiné | 面向个人智慧伙伴的开源项目 |
-| 对外产品类别 | Personal Intelligence Companion / 个人智慧伙伴 | 用户感知到的长期 AI 伙伴 |
-| 技术核心 | Personal Cognitive Model / 个人认知模型 | 由记忆、知识、经验、技能、策略、评测和适配层构成的个人模型资产 |
-| 架构主张 | Open Cognitive Architecture / 开放认知架构 | 面向开发者和社区的开放模块、协议和治理框架 |
-| 核心承诺 | Beyond understanding. / 不止于懂你。 | 理解之后，还要记忆、协作、保护、适应和成长 |
-
-一句话说明：
-
-> Zhiné turns personal AI from a one-time tool into a long-term, portable, governable and evolving personal intelligence companion.
+Zhiné is not another chatbot, task-execution framework, local RAG demo, or wrapper around cloud foundation models. It is a personal cognitive infrastructure designed to turn AI from a one-time tool into a long-term, trusted, governable, and evolving companion for individual intelligence.
 
 ---
 
-## 2. Zhiné 为什么存在
+## Core Lines / 核心表达体系
 
-今天，大多数 AI 产品仍然以以下形态存在：
+### Slogan / 主标语
+
+> **不止于懂你。**  
+> **Beyond understanding.**
+
+### Mission Line / 使命表达
+
+> **超越，才是自己。**  
+> **To transcend is to become oneself.**
+
+### Brand Belief / 品牌信念
+
+> **人工智能的真正意义，不是让机器更像人，而是让人突破自己。**  
+> **The true meaning of artificial intelligence is not to make machines more human, but to help humans transcend their own limits.**
+
+### AI Ethics Line / AI 伦理原则
+
+> **AI 应成为人类共享的能力，而不是少数人的特权。**  
+> **AI should be a shared human capability, not a privilege of the few.**
+
+---
+
+## Why Zhiné Exists
+
+Every truly profound technological revolution does more than improve efficiency. It reshapes the structure of civilization: how knowledge is created, how capability is distributed, how memory endures, how people connect, and how individuals understand themselves.
+
+Artificial Intelligence is becoming such a civilizational turning point.
+
+Most AI products today still follow a short-lived interaction pattern:
 
 ```text
-用户请求 → 云端模型回答 → 对话结束
+User request → Cloud model response → Conversation ends
 ```
 
-这种模式可以解决很多即时任务，但难以解决个人 AI 的长期问题：
+This model can solve many immediate tasks, but it does not answer the deeper questions of personal AI:
 
-- 用户长期交互产生的记忆、经验和方法归谁所有；
-- 个人偏好、知识和技能如何沉淀为可迁移资产；
-- 本地模型如何成为个人长期智慧连续性的承载体；
-- 远端强模型如何增强个人模型，而不是取代个人模型；
-- 模型成长如何被记录、验证、审计和回滚；
-- 用户如何避免被单一平台、模型、账户或应用锁定。
+- Who owns the memory, experience, and methods generated through long-term AI interaction?
+- How can personal knowledge, preferences, skills, and feedback become portable assets?
+- How can local models become carriers of long-term personal intelligence continuity?
+- How should remote foundation models support personal models without replacing or owning them?
+- How can AI growth be recorded, evaluated, audited, and rolled back?
+- How can high-quality AI remain accessible instead of becoming a privilege of the few?
 
-Zhiné 希望推动的形态是：
+Zhiné proposes a different direction:
 
 ```text
-用户任务 → 个人模型执行 → 经验沉淀 → 技能更新 → 策略优化 → 模型成长
+User task
+→ Personal model execution
+→ Experience extraction
+→ Skill update
+→ Strategy refinement
+→ Model evolution
 ```
+
+The goal is not merely to make AI answer better. The goal is to help individuals preserve judgment, extend intelligence, protect memory, and build long-term personal intelligence assets they truly own.
 
 ---
 
-## 3. Zhiné 是什么
+## What Zhiné Is
 
-Zhiné 是一套面向个人智慧伙伴的开放认知基础设施，核心由以下部分构成：
+Zhiné defines and advances a new category of personal AI:
 
-| 组成 | 作用 |
+> **个人智慧伙伴 / Personal Intelligence Companion**
+
+A Personal Intelligence Companion is a long-term intelligence system for the individual. It understands personal context, remembers long-term memory, thinks with the individual, accumulates personal knowledge, experience, and methods, protects personal intelligence assets, and remains continuously available across devices and contexts.
+
+At the technical level, Zhiné is built around:
+
+> **个人认知模型 / Personal Cognitive Model**
+
+A Personal Cognitive Model is not a single model weight. It is a personal cognitive asset system composed of memory, knowledge, experience, skills, strategies, benchmarks, model adapters, and evolution logs.
+
+| Layer | Meaning |
 |---|---|
-| Zhiné Core | 认知运行时，负责理解、推理、规划、工具调用、评估和反思 |
-| Zhiné Memory | 个人记忆系统，管理长期记忆、偏好、目标、复盘和价值约束 |
-| Zhiné Knowledge | 个人知识层，管理文档、笔记、项目资料、研究资料和知识结构 |
-| Zhiné Reasoning | 推理与反思层，负责任务理解、计划生成、批判、评估和复盘 |
-| Zhiné Identity | 身份与治理层，处理用户主权、权限、边界、审计、版本和回滚 |
-| Zhiné Access & Sync | 访问与同步层，支持跨设备访问、上下文连续和安全恢复 |
-| Zhiné Open Architecture | 开放架构，定义模块边界、开放协议和社区协作方式 |
-
-Zhiné 的核心不是单一模型权重，而是一个围绕个人长期成长形成的认知资产系统。
+| **Brand Category** | Personal Intelligence Companion / 个人智慧伙伴 |
+| **Technical Core** | Personal Cognitive Model / 个人认知模型 |
+| **Architecture Thesis** | Open Cognitive Architecture / 开放认知架构 |
+| **User Asset** | Personal Intelligence Assets / 个人智慧资产 |
+| **Ethical Foundation** | Inclusive AI / 普惠智能 |
 
 ---
 
-## 4. Zhiné 不是什么
+## What We Are Building
 
-Zhiné 不应被实现或传播为：
+Zhiné is designed as an open cognitive infrastructure with the following core components.
 
-| 不是 | 原因 |
+| Component | Role |
 |---|---|
-| 普通 ChatBot | 只回答问题，不能沉淀长期个人智慧资产 |
-| 普通 Agent 框架 | 只强调工具调用和流程编排，不强调个人模型主权与成长 |
-| 本地 RAG Demo | 检索只是基础能力，不等同于个人认知模型 |
-| 云端大模型套壳 | 个人长期资产必须由用户掌控 |
-| 无约束自训练系统 | 自学习必须经过授权、治理、评测和回滚机制 |
-| 数字灵魂或人格复制项目 | Zhiné 不宣称复制意识、人格或灵魂 |
+| **Zhiné Core** | Cognitive runtime for reasoning, planning, tool use, reflection, routing, and evaluation |
+| **Zhiné Memory** | Governable personal memory, including facts, preferences, goals, lessons, and value constraints |
+| **Zhiné Knowledge** | Personal knowledge layer for files, notes, research materials, project documents, and knowledge structures |
+| **Experience Engine** | Turns tasks, feedback, success, and failure into reusable experience |
+| **Skill Graph** | Represents personal capabilities as composable, evaluable, and evolvable skill nodes |
+| **Strategy Library** | Stores preferred ways of thinking, judging, planning, and solving problems |
+| **Personal Benchmark** | Evaluates whether the system is actually becoming more useful and more aligned with the individual |
+| **Personal Adapter** | LoRA, adapters, preference models, routing policies, and other personal model adaptation assets |
+| **Evolution Log** | Records every meaningful change in memory, skill, strategy, benchmark, or model adaptation |
+| **Access & Sync** | Supports cross-device access, secure synchronization, continuity, recovery, and user-governed portability |
 
 ---
 
-## 5. 核心原则
+## Architecture Overview
 
-Zhiné 的技术与产品实现必须遵循以下原则：
-
-1. **Local First**：个人数据、个人记忆、个人训练候选数据默认本地保存。
-2. **Personal Model Ownership**：用户拥有自己的记忆、知识、技能、训练数据、适配层、评测记录和演进日志。
-3. **Open Architecture**：不绑定特定模型、数据库、云服务或任务执行框架。
-4. **Evolvable by Design**：成长不是附加功能，而是系统核心。
-5. **Verifiable Growth**：不能只说“更懂你”，必须通过个人评测集证明。
-6. **Controlled Self-Training**：允许自学习，但必须受控、可评测、可回滚。
-7. **Human Sovereignty**：模型服务个人，不替代个人，不自动提升权限。
-8. **Ubiquitous Access**：支持跨设备、跨系统、跨应用的连续访问能力。
-9. **Interoperability**：个人智慧资产必须可导出、可迁移、可恢复。
-
----
-
-## 6. 第一阶段目标
-
-第一阶段不追求完整自训练，也不追求一次性实现全部架构。
-
-第一阶段只验证最小闭环：
+Zhiné should be understood not as a single model pipeline, but as a layered system combining access, governance, cognitive runtime, personal assets, growth mechanisms, and model execution.
 
 ```text
-个人记忆
-+ 个人知识库
-+ 本地模型
-+ 远端增强
-+ 经验抽取
-+ 技能沉淀
-+ 下次复用
+┌──────────────────────────────────────────────┐
+│                 User Access Layer             │
+│   Mobile / Desktop / Web / Browser / Local UI │
+└──────────────────────────────────────────────┘
+                        │
+┌──────────────────────────────────────────────┐
+│                Access & Sync Layer            │
+│   Identity / Device / Session / Sync / Recovery│
+└──────────────────────────────────────────────┘
+                        │
+┌──────────────────────────────────────────────┐
+│                 Governance Plane              │
+│   Permission / Audit / Security / Versioning   │
+└──────────────────────────────────────────────┘
+                        │
+┌──────────────────────────────────────────────┐
+│                 Cognitive Runtime             │
+│   Reasoning / Planning / Tools / Memory / RAG  │
+└──────────────────────────────────────────────┘
+                        │
+┌──────────────────────────────────────────────┐
+│              Personal Cognitive Assets        │
+│   Memory / Knowledge / Skills / Strategies    │
+│   Benchmarks / Adapters / Evolution Logs      │
+└──────────────────────────────────────────────┘
+                        │
+┌──────────────────────────────────────────────┐
+│                 Model Execution Layer         │
+│   Local LLM / Embedding / Reranker / Router    │
+│   Remote Teacher by Permission                │
+└──────────────────────────────────────────────┘
 ```
 
-建议优先场景：
+---
+
+## Core Principles
+
+Zhiné should be implemented under the following principles.
+
+| Principle | Requirement |
+|---|---|
+| **Local First** | Personal data, memory, and training candidates are local by default; cloud is used only by permission. |
+| **Personal Model Ownership** | Users own and control their memory, knowledge, skills, adapters, benchmarks, and evolution logs. |
+| **Open Architecture** | Zhiné should not be locked to one model, framework, database, cloud provider, or application. |
+| **Evolvable by Design** | Growth is not an add-on feature. It is part of the system architecture. |
+| **Verifiable Growth** | The system must prove improvement through personal benchmarks, not vague claims of being “smarter.” |
+| **Controlled Self-Training** | Self-learning and adaptation must be authorized, governed, evaluated, versioned, and rollbackable. |
+| **Human Sovereignty** | The model serves the individual. It must not replace human judgment or silently expand its authority. |
+| **Inclusive AI** | AI should be a shared human capability, not a privilege of the few. |
+| **Ubiquitous Access** | Personal intelligence should remain available across devices and contexts under user governance. |
+| **Interoperability** | Personal intelligence assets should be exportable, portable, restorable, and recoverable. |
+
+---
+
+## What Zhiné Is Not
+
+Zhiné should not be implemented, described, or marketed as:
+
+| Not | Why |
+|---|---|
+| **A generic chatbot** | Conversation alone does not create long-term personal intelligence assets. |
+| **A generic agent framework** | Tool execution and workflow orchestration are not enough without personal growth and ownership. |
+| **A local RAG demo** | Retrieval is a foundation, not a personal cognitive model. |
+| **A cloud model wrapper** | Personal memory and growth mechanisms must remain under user control. |
+| **An unconstrained self-training system** | Learning must be governed, evaluated, versioned, and rollbackable. |
+| **A digital soul or consciousness project** | Zhiné does not claim to copy personality, consciousness, or identity. |
+| **A premium AI privilege system** | Zhiné is built on the belief that AI should be a shared human capability. |
+
+---
+
+## Phase 0 and Phase 1
+
+Zhiné is currently in the project definition and architecture specification stage.
+
+The first engineering phase should not attempt full self-training or a complete ecosystem. It should validate a minimal personal evolution loop:
+
+```text
+Personal Memory
++ Personal Knowledge Base
++ Local Model
++ Remote Teacher by Permission
++ Experience Extraction
++ Skill Formation
++ Reuse in Future Tasks
+```
+
+### Recommended First Scenario
 
 ```text
 Personal Research Intelligence Companion for One User
 ```
 
-即：先面向单个用户，构建一个可长期使用、可调用个人知识库、能沉淀研究经验和复用分析技能的个人研究智慧伙伴。
+This means building a focused prototype that can:
+
+1. ingest personal documents and research materials;
+2. create a local personal knowledge base;
+3. answer and reason with local context first;
+4. escalate to a remote teacher model only when authorized or necessary;
+5. extract experience from completed tasks;
+6. form reusable skill cards or strategy rules;
+7. evaluate improvement through personal benchmark samples.
 
 ---
 
-## 7. 当前文档结构
+## Roadmap
 
-```text
-zhine/
-  README.md
-
-  docs/
-    architecture.md
-    principles.md
-    roadmap.md
-
-  specs/
-    personal-memory-format.md
-    evolution-log-format.md
-    personal-benchmark-protocol.md
-```
-
-### 7.1 文档说明
-
-| 文件 | 作用 |
-|---|---|
-| `README.md` | 项目总览、定位、原则和第一阶段目标 |
-| `docs/architecture.md` | 总体架构、模块边界、数据流、模型路由和安全控制 |
-| `docs/principles.md` | 核心原则、工程约束、产品行为准则和不可违反的红线 |
-| `docs/roadmap.md` | 阶段路线、交付物、验收标准和社区推进节奏 |
-| `specs/personal-memory-format.md` | 个人记忆格式、字段定义、生命周期和治理规则 |
-| `specs/evolution-log-format.md` | 演进日志格式、事件类型、审计、回滚和完整性要求 |
-| `specs/personal-benchmark-protocol.md` | 个人评测协议、测试样例、指标体系和发布门禁 |
+| Phase | Goal | Main Outputs |
+|---|---|---|
+| **Phase 0** | Clarify project thesis and architecture | Charter, whitepaper, architecture docs, principles, initial specs |
+| **Phase 1** | Build a minimal working prototype | Local model runtime, memory store, personal RAG, remote model adapter, experience engine |
+| **Phase 2** | Establish protocols and evaluation | Memory governance, skill graph, personal benchmarks, model router, safety guard, access and sync |
+| **Phase 3** | Build personal model adaptation layer | Training candidate pool, data curator, personal LoRA manager, distillation pipeline, evaluation gate |
+| **Phase 4** | Grow into an open ecosystem | Skills, plugins, model backends, memory backends, benchmarks, UI applications |
 
 ---
 
-## 8. 建议仓库结构
+## Suggested Repository Structure
 
 ```text
 zhine/
   README.md
   LICENSE
   CONTRIBUTING.md
+  CODE_OF_CONDUCT.md
   SECURITY.md
 
   docs/
+    charter.md
     whitepaper.md
     architecture.md
     principles.md
     roadmap.md
-    engineering-plan.md
-    mvp-plan.md
-    security-model.md
-    developer-quickstart.md
     governance.md
+    ai-ethics.md
+    developer-quickstart.md
+    security-model.md
 
   specs/
     personal-memory-format.md
@@ -185,9 +265,11 @@ zhine/
     model-router-protocol.md
     personal-adapter-format.md
     access-sync-protocol.md
+    fairness-and-accessibility-guidelines.md
 
   core/
   memory/
+  knowledge/
   growth/
   models/
   access-sync/
@@ -199,52 +281,172 @@ zhine/
 
 ---
 
-## 9. 开源与数据边界
+## Documentation
 
-Zhiné 是开源项目，但开源边界必须清晰：
+The project should maintain a clear separation between brand, technical architecture, implementation, and governance.
 
-| 可开源 | 不应默认开源 |
+| Document | Purpose |
 |---|---|
-| 架构思想 | 个人记忆 |
-| 核心框架 | 个人文档 |
-| 协议规范 | 个人训练数据 |
-| 参考实现 | 个人 LoRA / Adapter |
-| 评测模板 | 个人行为日志 |
-| 治理机制 | 用户私密上下文 |
-
-建议许可：
-
-| 类型 | 建议 |
-|---|---|
-| 核心代码 | Apache License 2.0 |
-| 文档与规范 | CC BY 4.0 |
-| 示例数据 | CC BY 或 CC BY-SA |
-| 个人数据 | 默认不公开，除非用户明确授权 |
+| `docs/charter.md` | Brand positioning, core narrative, principles, and expression boundaries |
+| `docs/whitepaper.md` | Technical thesis, system definition, architecture, governance, and roadmap |
+| `docs/architecture.md` | Conceptual architecture, module boundaries, data flow, and model routing |
+| `docs/principles.md` | Engineering principles, ethical constraints, and non-negotiable rules |
+| `docs/roadmap.md` | Milestones, deliverables, and phased development direction |
+| `docs/governance.md` | Open-source governance model and decision-making process |
+| `docs/ai-ethics.md` | Inclusive AI, fairness, accessibility, safety, and anti-discrimination principles |
+| `specs/personal-memory-format.md` | Memory schema, lifecycle, permissions, provenance, and rollback |
+| `specs/evolution-log-format.md` | Evolution event format, auditability, integrity, and rollback mechanism |
+| `specs/personal-benchmark-protocol.md` | Personal benchmark samples, scoring, evaluation gates, and release criteria |
 
 ---
 
-## 10. 项目宣言
+## Open Source and Data Boundaries
+
+Zhiné is an open-source project. However, open source does not mean personal data is open.
+
+| Open by design | Private by default |
+|---|---|
+| Architecture | Personal memory |
+| Core framework | Personal documents |
+| Protocols and schemas | Personal training data |
+| Reference implementations | Personal LoRA / adapters |
+| Evaluation templates | Personal behavior logs |
+| Governance mechanisms | Private context and identity data |
+
+Recommended licenses:
+
+| Asset Type | Recommended License |
+|---|---|
+| Core code | Apache License 2.0 |
+| Documentation and specifications | CC BY 4.0 |
+| Public benchmark templates | CC BY 4.0 |
+| Example data | CC BY or CC BY-SA |
+| Personal data | Not open by default; only with explicit user authorization |
+
+---
+
+## Contributing
+
+Zhiné is intended to be built with an open community. Contributions may include:
+
+- architecture proposals;
+- memory, skill, benchmark, and adapter specifications;
+- local model integration;
+- privacy and safety mechanisms;
+- fairness and accessibility testing;
+- multilingual documentation;
+- UI prototypes;
+- examples and reference implementations.
+
+Before contributing, contributors should follow these principles:
+
+1. respect user sovereignty;
+2. protect personal data by default;
+3. avoid platform lock-in;
+4. make growth verifiable;
+5. keep self-training controlled;
+6. design for inclusive access;
+7. never claim to copy consciousness, personality, or a digital soul.
+
+A formal `CONTRIBUTING.md` and governance document should be maintained as the project enters implementation.
+
+---
+
+## Security and Safety
+
+Zhiné should treat security and governance as part of its architecture, not as afterthoughts.
+
+Priority areas include:
+
+- prompt injection resistance;
+- personal data classification;
+- permission control for remote model calls;
+- audit trails for memory and skill updates;
+- rollback for wrong memories and unsafe strategies;
+- tool permission boundaries;
+- plugin sandboxing and signing;
+- deletion handling across indexes, caches, and training candidates;
+- fairness, accessibility, and anti-discrimination evaluation.
+
+---
+
+## Project Status
+
+Zhiné is currently in the **concept, architecture, and specification stage**.
+
+The immediate priority is to stabilize:
+
+1. the brand charter;
+2. the technical whitepaper;
+3. the architecture document;
+4. the principles document;
+5. the roadmap;
+6. the first three specifications:
+   - personal memory format;
+   - evolution log format;
+   - personal benchmark protocol.
+
+Engineering implementation should begin only after the minimal architecture and governance boundaries are sufficiently clear.
+
+---
+
+## Manifesto
 
 ```text
+Every truly profound technological revolution does more than improve efficiency.
+It reshapes the structure of civilization:
+how knowledge is created,
+how capability is distributed,
+how memory endures,
+how people connect,
+and how individuals understand themselves.
+
+Artificial Intelligence is becoming such a civilizational turning point.
+
 Zhiné is a Personal Intelligence Companion built on an open and evolvable cognitive architecture.
 
 We believe every person should own a local, private, portable, governable, and continuously evolving cognitive model.
 
-Zhiné is not just a task-execution framework or chatbot. It is a personal cognitive infrastructure that turns memory, experience, skills, feedback, and learning into long-term personal intelligence assets.
+Zhiné is not built to replace people, but to help them preserve judgment, expand intelligence, and transcend their own limits.
+
+Zhiné is not just a task-execution framework.
+It is a personal cognitive infrastructure that turns memory, experience, skills, feedback, and learning into long-term personal intelligence assets.
 
 Beyond understanding.
 To transcend is to become oneself.
+AI should be a shared human capability, not a privilege of the few.
 ```
 
-中文：
+---
 
-```text
-Zhiné 是一个建立在开放、可演进认知架构之上的个人智慧伙伴。
+## Name
 
-我们认为，每个人都应拥有一个本地、私有、可迁移、可治理、可持续成长的个人认知模型。
+**Zhiné** is the display name.  
+**zhine** is the digital name used for repositories, packages, files, and command-line contexts.
 
-Zhiné 不只是一个任务执行框架，而是一个个人认知基础设施，用于把记忆、经验、技能、反馈和学习转化为长期个人智慧资产。
+Suggested naming:
 
-不止于懂你。
-超越，才是自己。
-```
+| Item | Name |
+|---|---|
+| Display name | Zhiné |
+| Digital name | zhine |
+| Official domain | zhine.ai |
+| GitHub organization | zhine-ai |
+| Main repository | zhine |
+| Suggested package name | ai.zhine.app |
+
+---
+
+## Status Note
+
+This README is based on:
+
+- `Zhiné Global Brand Charter v0.3`
+- `Zhiné Technical Whitepaper v0.3`
+
+It should evolve with the project, but its core direction should remain stable:
+
+> **个人智慧伙伴 / Personal Intelligence Companion**  
+> **个人认知模型 / Personal Cognitive Model**  
+> **开放认知架构 / Open Cognitive Architecture**  
+> **普惠智能 / Inclusive AI**

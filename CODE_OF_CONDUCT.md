@@ -1,128 +1,105 @@
-# Contributor Covenant Code of Conduct
+# Zhiné Code of Conduct
 
-## Our Pledge
+## 1. Purpose
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+Zhiné is an open-source project for building personal intelligence infrastructure. The project welcomes contributors from different countries, languages, backgrounds, abilities, and levels of technical experience.
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+The community should reflect Zhiné's AI ethics principle:
 
-## Our Standards
+> AI should be a shared human capability, not a privilege of the few.
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+---
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+## 2. Expected Behavior
 
-Examples of unacceptable behavior include:
+Community members are expected to:
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+- communicate respectfully;
+- assume good faith where reasonable;
+- focus criticism on ideas and implementation, not individuals;
+- welcome newcomers and non-expert users;
+- be patient with language differences;
+- respect privacy and personal data boundaries;
+- disclose conflicts of interest when relevant;
+- help maintain a safe, inclusive, and technically serious community.
 
-## Enforcement Responsibilities
+---
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+## 3. Unacceptable Behavior
 
-Community leaders have the right and responsibility to remove, edit, or reject
-comments, commits, code, wiki edits, issues, and other contributions that are
-not aligned to this Code of Conduct, and will communicate reasons for moderation
-decisions when appropriate.
+Unacceptable behavior includes:
 
-## Scope
+- harassment, threats, or intimidation;
+- discriminatory language or behavior;
+- personal attacks;
+- sexualized comments or imagery;
+- repeated disruption of discussions;
+- publishing private information without consent;
+- submitting private personal data without authorization;
+- bad-faith attempts to bypass safety, privacy, or governance boundaries;
+- promoting Zhiné as a consciousness-copying, digital soul, or manipulative dependency system.
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-Examples of representing our community include using an official e-mail address,
-posting via an official social media account, or acting as an appointed
-representative at an online or offline event.
+---
 
-## Enforcement
+## 4. Technical Disagreement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement at
-support@oneasy.cc .
-All complaints will be reviewed and investigated promptly and fairly.
+Strong technical disagreement is acceptable when it remains respectful and evidence-based.
 
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
+Good disagreement should:
 
-## Enforcement Guidelines
+- identify the issue clearly;
+- explain trade-offs;
+- consider user sovereignty, privacy, security, fairness, and accessibility;
+- propose alternatives;
+- avoid personal judgment.
 
-Community leaders will follow these Community Impact Guidelines in determining
-the consequences for any action they deem in violation of this Code of Conduct:
+---
 
-### 1. Correction
+## 5. Reporting
 
-**Community Impact**: Use of inappropriate language or other behavior deemed
-unprofessional or unwelcome in the community.
+If you experience or observe unacceptable behavior, report it to the project maintainers through the designated community or repository channel.
 
-**Consequence**: A private, written warning from community leaders, providing
-clarity around the nature of the violation and an explanation of why the
-behavior was inappropriate. A public apology may be requested.
+Reports should include:
 
-### 2. Warning
+- what happened;
+- where it happened;
+- who was involved;
+- relevant links or screenshots if safe to share;
+- whether immediate action is needed.
 
-**Community Impact**: A violation through a single incident or series
-of actions.
+Do not share sensitive personal data in public reports.
 
-**Consequence**: A warning with consequences for continued behavior. No
-interaction with the people involved, including unsolicited interaction with
-those enforcing the Code of Conduct, for a specified period of time. This
-includes avoiding interactions in community spaces as well as external channels
-like social media. Violating these terms may lead to a temporary or
-permanent ban.
+---
 
-### 3. Temporary Ban
+## 6. Enforcement
 
-**Community Impact**: A serious violation of community standards, including
-sustained inappropriate behavior.
+Maintainers may take actions including:
 
-**Consequence**: A temporary ban from any sort of interaction or public
-communication with the community for a specified period of time. No public or
-private interaction with the people involved, including unsolicited interaction
-with those enforcing the Code of Conduct, is allowed during this period.
-Violating these terms may lead to a permanent ban.
+- warning;
+- comment removal;
+- issue or pull request lock;
+- temporary restriction;
+- removal from the project community;
+- reporting severe abuse to platform administrators.
 
-### 4. Permanent Ban
+Enforcement should be proportionate, documented where appropriate, and focused on protecting the community.
 
-**Community Impact**: Demonstrating a pattern of violation of community
-standards, including sustained inappropriate behavior,  harassment of an
-individual, or aggression toward or disparagement of classes of individuals.
+---
 
-**Consequence**: A permanent ban from any sort of public interaction within
-the community.
+## 7. Scope
 
-## Attribution
+This Code of Conduct applies to:
 
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+- repositories;
+- issues;
+- pull requests;
+- discussions;
+- documentation channels;
+- community events;
+- project-related communication spaces.
 
-Community Impact Guidelines were inspired by [Mozilla's code of conduct
-enforcement ladder](https://github.com/mozilla/diversity).
+---
 
-[homepage]: https://www.contributor-covenant.org
+## 8. Summary
 
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+Zhiné is built around personal sovereignty and inclusive access. The community should be rigorous, open, respectful, and safe for serious work.
