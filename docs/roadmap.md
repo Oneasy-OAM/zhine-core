@@ -1,332 +1,261 @@
 # Zhiné Roadmap
 
-> **Version 0.1 / Open Draft**  
-> **Document Type:** Project Roadmap and Milestone Plan  
-> **Scope:** Open-source architecture, reference implementation, specs and community ecosystem
+> Version 0.1  
+> A phased roadmap for moving Zhiné from charter and whitepaper into an open-source project.
+
+## 1. Purpose
+
+This roadmap defines the staged development direction of Zhiné. It is not a fixed product delivery schedule. It is a technical and community path for validating the Zhiné thesis step by step.
+
+The roadmap should remain conservative. Zhiné should first prove a minimal personal evolution loop before attempting broad automation, self-training, ecosystem expansion, or multi-device production deployment.
 
 ---
 
-## 0. 路线图定位
+## 2. Roadmap Principles
 
-本文档定义 Zhiné 从项目宣言、架构规范、最小原型到开放生态的阶段性路线。
-
-Zhiné 的长期目标是成为 **Personal Intelligence Companion / 个人智慧伙伴** 的开放基础设施。短期目标不是做“大而全”的 AI 产品，而是先验证个人认知模型的最小成长闭环。
-
----
-
-## 1. 路线图总览
-
-| 阶段 | 名称 | 核心目标 | 主要交付 |
-|---|---|---|---|
-| Phase 0 | 项目宣言与架构规范 | 把思想、边界、原则和标准方向讲清楚 | README、Whitepaper、Architecture、Principles、Specs v0.1 |
-| Phase 1 | 最小可运行原型 | 跑通单用户个人模型成长闭环 | 本地模型、远端增强、记忆、知识库、经验引擎、演进日志 |
-| Phase 2 | 开放协议、评测与跨设备连续性 | 建立技术壁垒、评测体系和基础同步能力 | Memory Governance、Benchmark、Model Router、Access & Sync |
-| Phase 3 | 个人模型适配层 | 形成用户可控的个人适配资产 | Training Candidate Pool、LoRA Manager、Evaluation Gate |
-| Phase 4 | 生态化 | 让社区构建插件、模型、技能、评测集和终端入口 | 插件生态、模型后端、技能市场、评测生态 |
+1. Do not overbuild before the architecture is clear.
+2. Do not train before data governance is clear.
+3. Do not sync widely before local ownership is clear.
+4. Do not build ecosystem features before core protocols are stable.
+5. Do not claim growth unless evaluation can prove it.
+6. Do not compromise user sovereignty for convenience.
+7. Do not let AI become a privilege of the few.
 
 ---
 
-## 2. Phase 0：项目宣言与架构规范
+## 3. Phase Overview
 
-### 2.1 目标
-
-把 Zhiné 的品牌定位、技术判断、架构边界、开放原则和第一批规范定义清楚。
-
-本阶段的重点不是写代码，而是避免项目在早期被误解为普通 ChatBot、Agent 框架、本地 RAG 或云端大模型套壳。
-
-### 2.2 交付物
-
-| 交付物 | 说明 | 状态建议 |
+| Phase | Name | Goal |
 |---|---|---|
-| `README.md` | 项目总览、定位、核心原则和第一阶段目标 | P0 |
-| `docs/whitepaper.md` | 技术白皮书 | P0 |
-| `docs/architecture.md` | 总体架构和模块边界 | P0 |
-| `docs/principles.md` | 核心原则与不可违反的红线 | P0 |
-| `docs/roadmap.md` | 阶段路线与里程碑 | P0 |
-| `specs/personal-memory-format.md` | 个人记忆格式草案 | P0 |
-| `specs/evolution-log-format.md` | 演进日志格式草案 | P0 |
-| `specs/personal-benchmark-protocol.md` | 个人评测协议草案 | P0 |
-| `LICENSE` | 建议 Apache License 2.0 | P0 |
-| `CONTRIBUTING.md` | 社区贡献规则 | P1 |
-| `SECURITY.md` | 安全披露规则 | P1 |
-
-### 2.3 验收标准
-
-Phase 0 完成时，应满足：
-
-1. 对外定位统一为 Personal Intelligence Companion / 个人智慧伙伴；
-2. 技术核心统一为 Personal Cognitive Model / 个人认知模型；
-3. 明确 Zhiné 是开源项目，不使用机密草案口径；
-4. 明确 Local First、Personal Ownership、Open Architecture、Verifiable Growth 等原则；
-5. 明确个人数据不默认开源；
-6. 明确第一阶段不做完整自动自训练；
-7. 核心文档能支撑开发者理解项目边界。
+| Phase 0 | Project Definition | Clarify brand, technical thesis, architecture, and governance principles |
+| Phase 1 | Minimal Working Prototype | Validate personal memory, personal knowledge, local model, remote teacher, experience extraction, and reuse |
+| Phase 2 | Protocols and Evaluation | Build memory governance, skill graph, benchmark protocol, model routing, safety guard, and access continuity |
+| Phase 3 | Personal Model Adaptation | Add controlled training candidates, adapters, distillation, evaluation gates, and model registry |
+| Phase 4 | Open Ecosystem | Enable community skills, plugins, memory backends, model backends, benchmarks, and applications |
 
 ---
 
-## 3. Phase 1：最小可运行原型
+## 4. Phase 0: Project Definition
 
-### 3.1 目标
+### Goal
 
-跑通单用户个人模型成长闭环。
+Make the project direction clear before engineering implementation.
 
-最小闭环：
+### Deliverables
+
+| Deliverable | Description |
+|---|---|
+| `docs/charter.md` | Brand positioning, core lines, principles, and expression boundaries |
+| `docs/whitepaper.md` | Technical thesis, system definition, architecture, risks, and roadmap |
+| `README.md` | GitHub entry document |
+| `docs/architecture.md` | Conceptual system architecture |
+| `docs/principles.md` | Engineering and ethical principles |
+| `docs/roadmap.md` | Development direction and phase criteria |
+| `docs/governance.md` | Initial governance model |
+| `docs/ai-ethics.md` | Inclusive AI, fairness, accessibility, and anti-discrimination principles |
+| Initial specs | Personal memory, evolution log, personal benchmark protocol |
+
+### Exit Criteria
+
+Phase 0 is complete when:
+
+1. the project can be explained clearly in one README;
+2. the architecture has stable conceptual layers;
+3. personal cognitive assets are defined;
+4. local-first and user ownership principles are explicit;
+5. the project has clear boundaries around consciousness, privacy, training, and remote models;
+6. minimum contribution and governance rules exist.
+
+---
+
+## 5. Phase 1: Minimal Working Prototype
+
+### Goal
+
+Validate the minimal personal evolution loop.
 
 ```text
-个人记忆
-+ 个人知识库
-+ 本地模型
-+ 远端增强
-+ 经验抽取
-+ 技能沉淀
-+ 下次复用
+Personal Memory
++ Personal Knowledge Base
++ Local Model
++ Remote Teacher by Permission
++ Experience Extraction
++ Skill Formation
++ Future Reuse
 ```
 
-建议第一场景：
+### Recommended First Scenario
 
 ```text
 Personal Research Intelligence Companion for One User
 ```
 
-### 3.2 P0 功能
+### Core Features
 
-| 模块 | 功能边界 | 验收标准 |
+| Feature | Priority | Description |
 |---|---|---|
-| Local Model Runtime | 接入至少一种本地模型运行环境 | 能完成基础问答和本地推理 |
-| Remote Model Adapter | 接入至少一种远端强模型 | 支持授权调用、结果评审和增强 |
-| Personal Memory Store | 记忆写入、检索、编辑、删除 | 能调用历史偏好和事实 |
-| Personal Knowledge Base | 文档导入、索引、检索 | 能基于个人资料完成研究任务 |
-| Model Router | 本地/远端/混合路由 | 能根据敏感度和复杂度路由 |
-| Experience Engine | 任务后经验抽取 | 能生成经验事件和候选技能 |
-| Evolution Log | 记录关键资产变化 | 每次记忆、技能、策略更新有日志 |
-| Basic UI / CLI | 基础交互入口 | 用户能完成导入、提问、确认、查看记录 |
+| Local model runtime | P0 | Run a local LLM or local inference backend |
+| Embedding and retrieval | P0 | Enable personal knowledge search |
+| Personal memory store | P0 | Store structured personal memory with provenance and permissions |
+| Personal knowledge base | P0 | Import documents and retrieve relevant context |
+| Remote model adapter | P0 | Use remote teacher models by permission |
+| Model router | P0 | Route tasks based on privacy, complexity, and confidence |
+| Experience engine | P0 | Extract lessons from completed tasks |
+| Evolution log | P0 | Record memory, skill, and strategy changes |
+| Skill card store | P1 | Save reusable skills |
+| Strategy rule store | P1 | Save preferred methods and decision patterns |
+| Personal benchmark samples | P1 | Evaluate whether the system improves |
+| Export and restore | P1 | Export core personal assets and restore them locally |
 
-### 3.3 P1 功能
+### Exit Criteria
 
-| 模块 | 功能边界 | 验收标准 |
-|---|---|---|
-| Reflection Engine | 任务后复盘 | 能指出成功经验、失败原因和改进点 |
-| Skill Store | 初版技能卡 | 能保存并复用至少一种任务技能 |
-| Strategy Library | 初版策略规则 | 能保存用户偏好的处理方式 |
-| Personal Benchmark | 初版评测样例 | 能比较成长前后的表现 |
-| Access Layer v0.1 | 身份、设备、本地目录规范 | 能支持基础本地资产管理 |
+Phase 1 is complete when the prototype can:
 
-### 3.4 暂不纳入
-
-Phase 1 不纳入：
-
-- 自动自训练；
-- 完整 LoRA 微调平台；
-- 大规模插件市场；
-- 多用户协作；
-- 商业化云同步；
-- 拟人化人格复制。
-
-### 3.5 验收标准
-
-Phase 1 完成时，应可演示：
-
-1. 用户上传个人研究资料；
-2. 系统建立本地知识库；
-3. 用户提出研究问题；
-4. 本地模型优先回答；
-5. 复杂任务在授权下调用远端教师模型；
-6. 系统生成任务结果；
-7. 用户反馈后系统提炼经验；
-8. 系统形成 Skill Card 或 Strategy Rule；
-9. 下一次类似任务能复用已有经验；
-10. 评测样例显示输出质量有改进；
-11. 错误记忆或策略可以回滚。
+1. ingest user documents;
+2. answer using local personal context;
+3. store and retrieve personal memory;
+4. distinguish memory from chat history;
+5. ask permission before remote teacher use;
+6. produce an experience event after a task;
+7. form a basic skill card or strategy rule;
+8. reuse that skill or strategy in a later task;
+9. record the change in an evolution log;
+10. pass a small personal benchmark before and after improvement.
 
 ---
 
-## 4. Phase 2：开放协议、评测与跨设备连续性
+## 6. Phase 2: Protocols and Evaluation
 
-### 4.1 目标
+### Goal
 
-建立 Zhiné 的技术壁垒和生态接口。
+Turn the prototype into a more rigorous open architecture with reusable protocols and evaluation gates.
 
-Phase 2 的重点不只是功能增加，而是让 Zhiné 的个人智慧资产具备可治理、可迁移、可评测、可同步的基础能力。
+### Core Workstreams
 
-### 4.2 交付模块
-
-| 模块 | 说明 |
+| Workstream | Description |
 |---|---|
-| Memory Governance | 记忆来源、版本、置信度、冲突处理、回滚 |
-| Skill Graph | 技能关系、依赖、复用、评分和版本化 |
-| Personal Benchmark | 个人评测集、评测指标、发布门禁 |
-| Model Router Protocol | 本地/远端/混合模型协同协议 |
-| Safety Guard | 数据分级、脱敏、工具权限和安全审计 |
-| Tool Bridge | 外部工具生态接入接口 |
-| Access & Sync | 端到端加密同步、多设备会话、设备权限管理 |
+| Memory governance | Source, confidence, conflict handling, deletion, rollback |
+| Skill graph | Skills as composable, versioned, evaluable nodes |
+| Personal benchmark protocol | Evaluation samples, scoring, gates, regression tests |
+| Model router protocol | Rules for local, remote, and hybrid execution |
+| Safety guard | Data classification, redaction, permission, tool control |
+| Access & Sync | Identity, device authorization, export, import, recovery, encrypted sync direction |
+| Fairness and accessibility | Language coverage, low-resource deployment, accessibility testing |
 
-### 4.3 开放标准推进
+### Exit Criteria
 
-Phase 2 应形成以下规范的 v0.2 或 v0.3：
+Phase 2 is complete when:
 
-- Personal Memory Format；
-- Personal Evolution Log；
-- Personal Benchmark Protocol；
-- Personal Skill Graph Format；
-- Model Router Protocol；
-- Personal Access & Sync Protocol。
-
-### 4.4 验收标准
-
-1. 个人记忆可导出、导入、迁移；
-2. 技能卡可复用、评估、版本化；
-3. 评测协议能阻止低质量更新上线；
-4. 路由协议能清晰表达本地与远端协同逻辑；
-5. 多设备访问不破坏 Local First 和用户主权；
-6. 工具调用和远端调用有完整审计。
+1. memory format has versioned schema;
+2. skill graph has a reference format;
+3. evolution log can support audit and rollback;
+4. personal benchmark protocol can block unsafe or low-quality updates;
+5. model routing is explainable and policy-controlled;
+6. safety guard handles remote calls and tool permissions;
+7. basic access and recovery flows are implemented;
+8. fairness and accessibility guidelines are testable.
 
 ---
 
-## 5. Phase 3：个人模型适配层
+## 7. Phase 3: Personal Model Adaptation
 
-### 5.1 目标
+### Goal
 
-让每个用户可以在授权和治理边界内形成自己的模型适配资产。
+Allow each person to form a controlled model adaptation layer.
 
-适配层不必从一开始就是完整模型权重，可以从偏好模型、路由策略、LoRA、Adapter 或任务专用小模型开始。
+### Core Workstreams
 
-### 5.2 交付模块
-
-| 模块 | 说明 |
+| Workstream | Description |
 |---|---|
-| Training Candidate Pool | 管理可进入训练的候选样本 |
-| Data Curator | 数据清洗、去重、脱敏、质量评分 |
-| Personal LoRA Manager | 个人 LoRA 创建、版本、评测和回滚 |
-| Distillation Pipeline | 远端教师模型蒸馏本地能力 |
-| Evaluation Gate | 训练后评测门禁 |
-| Model Registry | 个人模型版本管理 |
+| Training candidate pool | Curated candidate examples from user-approved experience |
+| Data curator | Cleaning, filtering, sensitivity classification, deduplication |
+| Personal adapter manager | LoRA, adapter, preference model, router policy management |
+| Distillation pipeline | Remote teacher examples used under permission and governance |
+| Evaluation gate | Benchmark and safety tests before adapter deployment |
+| Model registry | Versioned personal model assets and rollback points |
 
-### 5.3 关键约束
+### Exit Criteria
 
-- 无授权，不进入训练；
-- 无治理，不启动训练；
-- 无评测，不上线；
-- 无版本，不发布；
-- 无回滚，不启用；
-- 敏感数据不默认参与训练。
+Phase 3 is complete when:
 
-### 5.4 验收标准
-
-1. 用户可查看训练候选数据；
-2. 用户可批准或拒绝数据进入训练；
-3. 系统能生成个人适配层；
-4. 适配前后有评测对比；
-5. 适配层可禁用和回滚；
-6. 适配层元数据可导出。
+1. training candidates are explicitly governed;
+2. personal data is not used without authorization;
+3. adapters are versioned and linked to evaluation results;
+4. rollback works for harmful or low-quality adaptation;
+5. base model license constraints are tracked;
+6. deployment decisions are explainable;
+7. user ownership and portability are preserved.
 
 ---
 
-## 6. Phase 4：生态化
+## 8. Phase 4: Open Ecosystem
 
-### 6.1 目标
+### Goal
 
-形成围绕 Zhiné 开放架构的社区生态。
+Enable a community ecosystem around skills, plugins, model backends, memory backends, benchmarks, and user interfaces.
 
-生态不应围绕单一 App，而应围绕个人智慧资产、开放格式、运行时接口和可迁移能力展开。
+### Ecosystem Components
 
-### 6.2 生态组件
-
-| 类型 | 示例 |
+| Component | Examples |
 |---|---|
-| Skills | 写作、研究、编程、学习、决策、健康管理、项目管理 |
-| Memory Backends | SQLite、PostgreSQL、Qdrant、Neo4j、LanceDB |
-| Model Backends | Ollama、vLLM、llama.cpp、SGLang、MLX |
-| Tool Plugins | MCP 工具、浏览器、文件系统、代码执行、日历、邮件 |
-| Benchmarks | 个人化评测、成长评测、安全评测、领域评测 |
-| UI | 桌面端、Web、本地服务器、移动端、浏览器扩展、未来智能终端 |
-| Governance Tools | 审计、权限、数据分级、插件签名、同步加密 |
+| Skills | writing, research, coding, learning, planning, decision support |
+| Memory backends | SQLite, PostgreSQL, Qdrant, Neo4j |
+| Model backends | Ollama, llama.cpp, vLLM, SGLang |
+| Tool plugins | browser, files, code, MCP tools, local apps |
+| Benchmarks | personal evaluation, growth evaluation, safety evaluation, fairness evaluation |
+| UI | desktop, web, mobile, browser extension, local server |
 
-### 6.3 社区治理重点
+### Exit Criteria
 
-- 开放协议优先；
-- 参考实现次之；
-- 应用形态多样化；
-- 插件最小权限；
-- 个人数据不进入公共仓库；
-- 社区评测集不包含真实个人隐私；
-- 贡献者必须遵守安全和数据边界。
+Phase 4 is complete when:
 
----
-
-## 7. 版本节奏建议
-
-| 版本 | 重点 | 输出 |
-|---|---|---|
-| v0.1 | 文档与架构草案 | README、Architecture、Principles、Core Specs |
-| v0.2 | 最小原型 | 本地模型、记忆、知识库、路由、演进日志 |
-| v0.3 | 成长闭环 | 经验引擎、技能卡、策略库、个人评测 |
-| v0.4 | 治理与安全 | 权限、审计、数据分级、回滚、安全模型 |
-| v0.5 | 访问与同步 | Access Layer、本地备份、基础同步、恢复 |
-| v0.6 | 开放协议增强 | Router、Skill Graph、Benchmark、Sync Protocol |
-| v0.7 | 适配层实验 | 候选训练池、LoRA/Adapter、评测门禁 |
-| v1.0 | 稳定参考实现 | 稳定 API、文档、示例、社区治理机制 |
+1. external developers can build compatible skills;
+2. personal assets remain portable across implementations;
+3. plugin permissions are enforceable;
+4. memory and benchmark formats are stable enough for community use;
+5. governance can handle proposals, releases, security issues, and disputes;
+6. the ecosystem does not undermine user sovereignty or inclusive access.
 
 ---
 
-## 8. 优先级判断
+## 9. Near-Term Priorities
 
-### 8.1 最高优先级
+Immediate project priorities:
 
-- 项目定位统一；
-- 个人记忆格式；
-- 演进日志；
-- 个人评测协议；
-- 本地/远端路由；
-- 安全治理；
-- 最小可运行闭环。
-
-### 8.2 暂缓优先级
-
-- 多用户 SaaS；
-- 市场化插件商店；
-- 自动自训练；
-- 完整移动端产品；
-- 大规模云同步；
-- 拟人化角色系统。
-
-### 8.3 不应推进的方向
-
-- 复制人格或数字灵魂叙事；
-- 默认云端化；
-- 以平台账户锁定个人资产；
-- 未经授权的数据训练；
-- 无评测的自动成长；
-- 过早商业化导致架构封闭。
+1. freeze Charter v0.3 and Whitepaper v0.3 as baseline documents;
+2. stabilize README and core documentation;
+3. complete architecture, principles, roadmap, governance, and AI ethics documents;
+4. draft the first three specifications:
+   - personal memory format;
+   - evolution log format;
+   - personal benchmark protocol;
+5. prepare contribution, conduct, security, and license files;
+6. define Phase 1 reference implementation scope.
 
 ---
 
-## 9. 北极星指标
+## 10. What Not to Prioritize Yet
 
-Zhiné 的长期成功不以工具调用次数或聊天轮数衡量，而应以个人智慧资产是否持续增值衡量。
+The project should not prematurely prioritize:
 
-关键指标包括：
-
-1. 用户是否拥有并能迁移自己的长期记忆；
-2. 用户是否能积累技能、策略和方法论；
-3. 系统是否能证明自己比过去更理解用户；
-4. 用户是否能审计、删除、回滚和导出个人资产；
-5. 本地模型是否成为个人长期智慧连续性的承载体；
-6. 用户是否能跨设备安全、连续、随身调用个人智慧伙伴；
-7. 远端强模型是否增强本地个人模型，而不是取代它。
+- broad commercial packaging;
+- full autonomous agents;
+- unconstrained self-training;
+- public sharing of personal cognitive assets;
+- production-grade cloud sync before local governance is stable;
+- large plugin ecosystem before permissions and sandboxing are clear;
+- model adaptation before evaluation gates are stable.
 
 ---
 
-## 10. 下一批建议文件
+## 11. Summary
 
-在当前 7 个文件之后，建议继续生成：
+Zhiné should move carefully from vision to architecture, from architecture to prototype, from prototype to protocols, and from protocols to ecosystem.
 
-1. `docs/security-model.md`；
-2. `docs/governance.md`；
-3. `docs/mvp-plan.md`；
-4. `docs/developer-quickstart.md`；
-5. `specs/skill-graph-format.md`；
-6. `specs/model-router-protocol.md`；
-7. `specs/personal-adapter-format.md`；
-8. `specs/access-sync-protocol.md`；
-9. `CONTRIBUTING.md`；
-10. `SECURITY.md`。
+The first goal is not scale. The first goal is proof:
+
+```text
+Can a personal AI system remember, reason, learn, evaluate, and grow under user sovereignty?
+```
+
+Only after that loop is proven should the project expand into broader adaptation, synchronization, and ecosystem development.
